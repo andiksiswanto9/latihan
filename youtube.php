@@ -14,7 +14,7 @@ class Youtube {
      return $array;
    }
 
-   function lihat($video = "") {
+   function lihat1($video = "") {
      $json = file_get_contents('https://www.googleapis.com/youtube/v3/videos?id='.$video.'&key='.$this->apikey.'&part=snippet,statistics');
      $array = json_decode($json);
      return $array;
